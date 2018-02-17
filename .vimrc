@@ -2,6 +2,7 @@ source $HOME/.vim/mappings.vim
 source $HOME/.vim/tabs.vim
 source $HOME/.vim/kfj-bundle.vim
 source $HOME/.vim/fonts.vim
+source $HOME/.vim/plugins.vim
 
 set background=dark
 if has("gui_running")
@@ -13,6 +14,7 @@ endif
 set number
 syntax enable
 syntax on
+set mouse=a
 
 " Disable backups and .swp files
 set nobackup

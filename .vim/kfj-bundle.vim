@@ -8,6 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
