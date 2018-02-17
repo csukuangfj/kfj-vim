@@ -48,8 +48,11 @@ let g:NERDTrimTrailingWhitespace = 1
 " <C-n> to toggle the diretory window
 " <leader>n to toggle the tabs
 " Inside the window, press upper case i to toggle hidden files
+" Inside the window:
+"   t to open the file in a new tab
+"   s to vertically split the window and open the file
 "----------------------------------------
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'jistr/vim-nerdtree-tabs'
 let g:NERDTreeShowHidden=1
-let g:NERDTreeMapOpenInTab='<ENTER>'
+
