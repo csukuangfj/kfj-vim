@@ -13,9 +13,11 @@
 " Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 
+let g:airline_powerline_fonts = 1
+
 "========================================
 " comment plugin
-" <leader>cc comment curren line or selected lines
+" <leader>cc comment current line or selected lines
 " <leader>c<space> toggle
 " <leader>cs sexy comment, i.e., /** */
 " <leader>cm minimal comment, i.e., /* */
@@ -39,20 +41,25 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
 
-" Enable trimming of trailing whitespace when uncommenting
+" Enable trimming of trailing white space when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
 "========================================
 " directory structure and tab
+"----------------------------------------
 " See mapped key in .vim/mappings.vim
-" <C-n> to toggle the diretory window
+" <C-n> to toggle the directory window
 " <leader>n to toggle the tabs
 " Inside the window, press upper case i to toggle hidden files
 " Inside the window:
 "   t to open the file in a new tab
 "   s to vertically split the window and open the file
-"----------------------------------------
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'jistr/vim-nerdtree-tabs'
 let g:NERDTreeShowHidden=1
+
+"========================================
+" vim-devicons
+"----------------------------------------
+set encoding=utf8  " to show glyphs
 

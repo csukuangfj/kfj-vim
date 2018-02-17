@@ -1,9 +1,9 @@
 source $HOME/.vim/mappings.vim
 source $HOME/.vim/tabs.vim
-source $HOME/.vim/kfj-bundle.vim
-source $HOME/.vim/fonts.vim
-source $HOME/.vim/plugins.vim
 source $HOME/.vim/spellcheck.vim
+source $HOME/.vim/kfj-bundle.vim
+source $HOME/.vim/plugins.vim
+source $HOME/.vim/fonts.vim
 
 set background=dark
 if has("gui_running")
@@ -29,3 +29,4 @@ set smartcase
 " Set terminal window title
 set title
 
+set cursorline

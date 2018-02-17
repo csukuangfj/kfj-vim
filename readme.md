@@ -60,3 +60,5 @@ of the current file in the working directory
 [2]: https://github.com/scrooloose/nerdcommenter
 [1]: https://github.com/csukuangfj/vim-exercises
 
+## TODO
+ - https://github.com/cHoco/dotFiles/blob/master/vimrc
