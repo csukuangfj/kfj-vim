@@ -13,8 +13,6 @@
 " Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 
-let g:airline_powerline_fonts = 1
-
 "========================================
 " comment plugin
 " <leader>cc comment current line or selected lines
@@ -57,9 +55,3 @@ let g:NERDTrimTrailingWhitespace = 1
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'jistr/vim-nerdtree-tabs'
 let g:NERDTreeShowHidden=1
-
-"========================================
-" vim-devicons
-"----------------------------------------
-set encoding=utf8  " to show glyphs
-
