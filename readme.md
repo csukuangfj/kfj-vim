@@ -53,6 +53,11 @@ of the current file in the working directory
  - vim-airline/vim-airline
  - vim-airline/vim-airline-themes
 
+## tagbar
+ - install ctags first, and add it to `PATH`
+ - `<leader>ilt` to toggle the tagbar window
+ - it is shown in the right side, since the left side is for the directory window
+
 [6]: https://github.com/
 [5]: https://github.com/
 [4]: https://github.com/jistr/vim-nerdtree-tabs
@@ -62,3 +67,6 @@ of the current file in the working directory
 
 ## TODO
  - https://github.com/cHoco/dotFiles/blob/master/vimrc
+
+## Notes
+ - `gg=G` to fix indent
