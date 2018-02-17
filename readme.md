@@ -1,34 +1,31 @@
 # Introduction
 
-This repository contains some VIM tutorials.
-
- - vimtutor
- - [vim_ex.txt][1], an exercise after finishing vimtutor.
+This repository contains the my configurations.
 
 # Mapped keys
- - <leader> has been mapped to the key `;`
+ - `<leader>` has been mapped to the key `;`
 
 # Installed plugins
 
-## repeat
+## Repeat
  - tpope/vim-repeat
  - Install this plugin so that `.` works for commands defined by other plugins
 
 ## Comment
  - [scrooloose/nerdcommenter][2]
- - <leader>cc, to comment the current line or selected lines
- - <leader>c<space> to toggle the comment of the current line of selected lines
- - <leader>cs, s is short for sexy, i.e., beautiful comment.
- - <leader>cm, m is short for minimal comment, i.e, use `/* */` instead of `//`
+ - `<leader>`cc, to comment the current line or selected lines
+ - `<leader>`c`<space>` to toggle the comment of the current line of selected lines
+ - `<leader>`cs, s is short for sexy, i.e., beautiful comment.
+ - `<leader>`cm, m is short for minimal comment, i.e, use `/* */` instead of `//`
 
 ## Directory window
  - [scrooloose/nerdtree][3]
  - [jistr/vim-nerdtree-tabs][4]
- - <C-n>, i.e., press ctrl + n to toggle the directory window
+ - `<C-n>`, i.e., press ctrl + n to toggle the directory window
  - Inside the directory window
    - the upper case `i` to toggle hidden files
    - `t` to open the file in a new tab
-   - `s` to vertically split the window and open the file in the splitted window
+   - `s` to vertically split the window and open the file in the split window
 
 ## Show/Remove trailing/leading spaces
  - bronson/vim-trailing-whitespace
@@ -38,7 +35,7 @@ This repository contains some VIM tutorials.
 ## Git wrapper
  - tpope/vim-fugitive
  - `Git someCommand` is equivalent to `git someCommand`
- - `:Gwrite` is equivalent to `git add %`, i.e., to stage the currennt file
+ - `:Gwrite` is equivalent to `git add %`, i.e., to stage the current file
  - `:Gread` is equivalent to `git checkout HEAD %`, i.e., to discard the changes
 of the current file in the working directory
  - `:Gremove` is equivalent to `git rm %`
