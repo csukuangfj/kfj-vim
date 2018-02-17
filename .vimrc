@@ -1,6 +1,7 @@
 source $HOME/.vim/mappings.vim
 source $HOME/.vim/tabs.vim
 source $HOME/.vim/kfj-bundle.vim
+source $HOME/.vim/fonts.vim
 
 set background=dark
 if has("gui_running")
