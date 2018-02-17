@@ -10,3 +10,9 @@ inoremap <right> <Nop>
 
 " use jk to simulate ESC in the insert mode
 inoremap jk <ESC>
+
+" Mapp <leader> key
+let mapleader=";"
+
+" for NERDTree
+map <C-n> :NERDTreeToggle<CR>

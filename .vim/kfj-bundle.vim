@@ -11,6 +11,10 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
