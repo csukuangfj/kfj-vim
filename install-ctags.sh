@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ctags_dir=$HOME/software/ctags
-if [ -d ${ctags_dir}]; then
+if [ -d ${ctags_dir} ]; then
   exit 0
 fi
-mkdir ${ctags_dir}
+mkdir -p ${ctags_dir}
 pushd .
 mkdir -p /tmp
 cd /tmp
