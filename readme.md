@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains the my configurations.
+This repository contains my Vim configurations.
 
 # Mapped keys
  - `<leader>` has been mapped to the key `;`
@@ -14,7 +14,7 @@ This repository contains the my configurations.
 ## Comment
  - [scrooloose/nerdcommenter][2]
  - `<leader>`cc, to comment the current line or selected lines
- - `<leader>`c`<space>` to toggle the comment of the current line of selected lines
+ - `<leader>`c`<space>` to toggle the comment of the current line within selected lines
  - `<leader>`cs, s is short for sexy, i.e., beautiful comment.
  - `<leader>`cm, m is short for minimal comment, i.e, use `/* */` instead of `//`
 
