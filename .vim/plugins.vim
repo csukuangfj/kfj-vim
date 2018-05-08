@@ -24,6 +24,11 @@ set laststatus=2
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
+" do not show it by default
+" let g:NERDTreeQuitOnOpen=1
+
+
+
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
 
@@ -54,4 +59,10 @@ let g:NERDTrimTrailingWhitespace = 1
 "   s to vertically split the window and open the file
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'jistr/vim-nerdtree-tabs'
+
 let g:NERDTreeShowHidden=1
+
+"========================================
+" ctrlpvim/ctrlp.vim
+"----------------------------------------
+let g:ctrlp_map = '<c-p>'

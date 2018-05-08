@@ -27,6 +27,10 @@ This repository contains my Vim configurations.
    - `t` to open the file in a new tab
    - `s` to vertically split the window and open the file in the split window
 
+## ctrlpvim
+ - settings: `let g:ctrlp_map = '<c-p>'`
+ - press `<c-p>`, i.e., ctrl + p to find the file (case-insensitive) in the current directory and subdirectories
+
 ## Show/Remove trailing/leading spaces
  - bronson/vim-trailing-whitespace
  - the trailing/leading spaces are shown in red

@@ -16,6 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-repeat'
 Plugin 'majutsushi/tagbar'
+Plugin 'ctrlpvim/ctrlp.vim'
+
 Plugin 'csukuangfj/vim-tex-fold'
 
 " All of your Plugins must be added before the following line
