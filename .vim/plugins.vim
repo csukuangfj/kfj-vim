@@ -65,4 +65,10 @@ let g:NERDTreeShowHidden=1
 "========================================
 " ctrlpvim/ctrlp.vim
 "----------------------------------------
+" press ctrl+p to invoke it 
 let g:ctrlp_map = '<c-p>'
+" open file in a new tab
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
