@@ -62,6 +62,17 @@ of the current file in the working directory
  - `<leader>ilt` to toggle the tagbar window
  - it is shown in the right side, since the left side is for the directory window
 
+## YouCompleteMe
+ - `cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON` or `set( CMAKE_EXPORT_COMPILE_COMMANDS ON )`,
+ which generate a file `compile_commands.json` in the build directory.
+ - symlink it to the project root directory.
+ - ;gl to go to declaration
+ - ;gf to go to definition
+ - ;gi to go to include
+ - ;gg to go to declaration or definition
+ - ctrl + o to go backward
+ - ctrl + i to go forward
+
 [6]: https://github.com/
 [5]: https://github.com/
 [4]: https://github.com/jistr/vim-nerdtree-tabs

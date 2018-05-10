@@ -17,6 +17,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-repeat'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'csukuangfj/vim-tex-fold'
 
