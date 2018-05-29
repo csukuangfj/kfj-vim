@@ -80,3 +80,9 @@ nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
+
+"========================================
+" davidhalter/jedi-vim
+"----------------------------------------
+"" disable docstring window
+autocmd FileType python setlocal completeopt-=preview

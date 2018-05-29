@@ -18,6 +18,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 
 Plugin 'csukuangfj/vim-tex-fold'
 
