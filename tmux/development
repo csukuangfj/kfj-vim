@@ -1,0 +1,29 @@
+# a demo tmux script
+tmux has-session -d development
+if [ $? != 0 ]; then
+    # -n editor: to create a window named editor
+    # -d: detach the session
+    tmux new-session -s development -n editor -d
+    # C-m means carriage return
+    # change to the direcotry /tmp
+    tmux send-keys -t development 'cd /tmp/to' C-m
+    # open the vim editor
+    tmux send-keys -t development 'vim' C-m
+
+    # top: vim, bottom: console
+    tmux split-window -v -t development
+    tmux select-layout -t development main-horizontal
+
+    # change the directory of the second pane to ~/Documents
+    # session:window.pane
+    tmux send-keys -t development:1.2 'cd ~/Documents' C-m
+
+    # create a second window, name it as console
+    tmux new-window -n console -t development
+    tmux send-keys -t development:2 'cd ~/Downloads' C-m
+
+    # select the first window when we attach to it
+    tmux select-window -t development:1
+fi
+# attach to the session!
+tmux attach -t development
