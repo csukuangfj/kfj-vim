@@ -2,7 +2,7 @@
 " nnoremap <down> <Nop>
 " nnoremap <left> <Nop>
 " nnoremap <right> <Nop>
-"
+
 " inoremap <up> <Nop> " disable arrow keys in the insert mode
 " inoremap <down> <Nop>
 " inoremap <left> <Nop>
@@ -11,7 +11,7 @@
 " use jk to simulate ESC in the insert mode
 inoremap jk <ESC>
 
-" Mapp <leader> key
+" Map <leader> key
 let mapleader=";"
 
 " for NERDTree
