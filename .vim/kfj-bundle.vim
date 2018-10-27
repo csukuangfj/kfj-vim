@@ -19,6 +19,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'fatih/vim-go'
 
 Plugin 'csukuangfj/vim-tex-fold'
 

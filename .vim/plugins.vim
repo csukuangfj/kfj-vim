@@ -86,3 +86,11 @@ nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 "----------------------------------------
 "" disable docstring window
 autocmd FileType python setlocal completeopt-=preview
+
+"========================================
+" fatih/vim-go
+"----------------------------------------
+nnoremap <leader>gb :GoBuild<CR>
+nnoremap <leader>gr :GoRun<CR>
+nnoremap <leader>gn :cnext<CR>
+nnoremap <leader>gp :cprevious<CR>
