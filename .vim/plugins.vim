@@ -24,10 +24,8 @@ set laststatus=2
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
-" do not show it by default
-" let g:NERDTreeQuitOnOpen=1
-
-
+" keep nerd tree open across tabs
+autocmd BufWinEnter * NERDTreeMirror
 
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
@@ -86,11 +84,3 @@ nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 "----------------------------------------
 "" disable docstring window
 autocmd FileType python setlocal completeopt-=preview
-
-"========================================
-" fatih/vim-go
-"----------------------------------------
-nnoremap <leader>gb :GoBuild<CR>
-nnoremap <leader>gr :GoRun<CR>
-nnoremap <leader>gn :cnext<CR>
-nnoremap <leader>gp :cprevious<CR>
