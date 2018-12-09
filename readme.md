@@ -1,11 +1,30 @@
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Mapped Keys](#mapped-keys)
+- [Installed Plugins](#installed-plugins)
+    * [Repeat](#repeat)
+    * [Comment](#comment)
+    * [Directory Window](#directory-window)
+    * [Fuzzy File Finder](#fuzzy-file-finder)
+    * [Fix Trailing and Leading Spaces](#fix-trailing-and-leading-spaces)
+    * [Color Scheme](#color-scheme)
+    * [Status Line](#status-line)
+    * [Tagbar](#tagbar)
+    * [YouCompleteMe](#youcompleteme)
+    * [Mark Visualization](#mark-visualization)
+- [TODO](#todo)
+- [Notes](#notes)
+
 # Introduction
 
 This repository contains my Vim configurations.
 
-# Mapped keys
+# Mapped Keys
  - `<leader>` has been mapped to the key `;`
 
-# Installed plugins
+# Installed Plugins
 
 ## Repeat
  - tpope/vim-repeat
@@ -18,7 +37,7 @@ This repository contains my Vim configurations.
  - `<leader>`cs, s is short for sexy, i.e., beautiful comment.
  - `<leader>`cm, m is short for minimal comment, i.e, use `/* */` instead of `//`
 
-## Directory window
+## Directory Window
  - [scrooloose/nerdtree][3]
  - [jistr/vim-nerdtree-tabs][4]
  - `<C-n>`, i.e., press ctrl + n to toggle the directory window
@@ -28,24 +47,25 @@ This repository contains my Vim configurations.
    - `s` to vertically split the window and open the file in the split window
    - `<Enter>` to open the file in the current tab
 
-## ctrlpvim
+## Fuzzy File Finder
+ - `kien/ctrlp.vim`
  - settings: `let g:ctrlp_map = '<c-p>'`
  - press `<c-p>`, i.e., ctrl + p to find the file (case-insensitive) in the current directory and subdirectories
 
-## Show/Remove trailing/leading spaces
+## Fix Trailing and Leading Spaces
  - bronson/vim-trailing-whitespace
  - the trailing/leading spaces are shown in red
  - `:FixWhiteSpace` to delete trailing/leading spaces of the whole file or the selected region
 
-## Color scheme
+## Color Scheme
  - altercation/vim-colors-solarized
  - tomasr/molokai
 
-## Status line
+## Status Line
  - vim-airline/vim-airline
  - vim-airline/vim-airline-themes
 
-## tagbar
+## Tagbar
  - install ctags first, and add it to `PATH`
  - `<leader>ilt` to toggle the tagbar window
  - it is shown in the right side, since the left side is for the directory window
