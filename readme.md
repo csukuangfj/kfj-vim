@@ -26,6 +26,7 @@ This repository contains my Vim configurations.
    - the upper case `i` to toggle hidden files
    - `t` to open the file in a new tab
    - `s` to vertically split the window and open the file in the split window
+   - `<Enter>` to open the file in the current tab
 
 ## ctrlpvim
  - settings: `let g:ctrlp_map = '<c-p>'`
@@ -35,19 +36,6 @@ This repository contains my Vim configurations.
  - bronson/vim-trailing-whitespace
  - the trailing/leading spaces are shown in red
  - `:FixWhiteSpace` to delete trailing/leading spaces of the whole file or the selected region
-
-## Git wrapper
- - tpope/vim-fugitive
- - `Git someCommand` is equivalent to `git someCommand`
- - `:Gwrite` is equivalent to `git add %`, i.e., to stage the current file
- - `:Gread` is equivalent to `git checkout HEAD %`, i.e., to discard the changes
-of the current file in the working directory
- - `:Gremove` is equivalent to `git rm %`
- - `:Gmove some/path` is equivalent to `git mv % some/path`
- - `:Gstatus`
- - `:Gdiff`
- - `:Gcommit`
- - `:Gpush`
 
 ## Color scheme
  - altercation/vim-colors-solarized
@@ -72,6 +60,15 @@ of the current file in the working directory
  - ;gg to go to declaration or definition
  - ctrl + o to go backward
  - ctrl + i to go forward
+
+## Mark Visualization
+ - `kshenoy/vim-signature`
+ - `ma` to create a mark named `a`
+ - remember how to jump to mark `a`: backtick -- column, `'` -- beginning of the line
+ - `dma` to delete mark `a`
+ - `m-` to delete the mark in the current line
+ - `m<space> to delete all marks
+ - `m,` to allocate the next available mark for the current line
 
 [6]: https://github.com/
 [5]: https://github.com/
