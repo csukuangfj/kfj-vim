@@ -31,3 +31,8 @@ set smartcase
 set title
 
 set cursorline
+
+set foldmethod=marker
+set foldmarker={,}
+set foldlevel=1
+set nofoldenable "disable fold by default
