@@ -20,12 +20,19 @@ Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
 
 Plugin 'csukuangfj/vim-tex-fold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+call glaive#Install()
+Glaive codefmt plugin[mappings]
+
 "
 " Brief help
 " :PluginList       - lists configured plugins
