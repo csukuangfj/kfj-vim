@@ -4,16 +4,21 @@
 - [Introduction](#introduction)
 - [Mapped Keys](#mapped-keys)
 - [Installed Plugins](#installed-plugins)
-    * [Repeat](#repeat)
+    * [Code Format](#code-format)
+    * [Color Scheme](#color-scheme)
     * [Comment](#comment)
     * [Directory Window](#directory-window)
-    * [Fuzzy File Finder](#fuzzy-file-finder)
     * [Fix Trailing and Leading Spaces](#fix-trailing-and-leading-spaces)
-    * [Color Scheme](#color-scheme)
+    * [Fuzzy File Finder](#fuzzy-file-finder)
+    * [Indent Guides](#indent-guides)
+    * [Indent Line](#indent-line)
+    * [Mark Visualization](#mark-visualization)
+    * [Python Auto Completion](#python-auto-completion)
+    * [Repeat](#repeat)
+    * [Resize or Move Split Windows](#resize-or-move-split-windows)
     * [Status Line](#status-line)
     * [Tagbar](#tagbar)
     * [YouCompleteMe](#youcompleteme)
-    * [Mark Visualization](#mark-visualization)
 - [TODO](#todo)
 - [Notes](#notes)
 
@@ -26,9 +31,17 @@ This repository contains my Vim configurations.
 
 # Installed Plugins
 
-## Repeat
- - tpope/vim-repeat
- - Install this plugin so that `.` works for commands defined by other plugins
+## Code Format
+ - `google/vim-codefmt`
+ - refer to the Github page for configuration
+ - for C++, install clang-format, e.g., `brew install clang-format`
+ - for Python, install yapf, e.g., `pip install yapf`
+ - for Bazel, install `buildifier`, refer to <https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md>
+ - files are auto formated on save; reformated files overwrite current files!
+
+## Color Scheme
+ - altercation/vim-colors-solarized
+ - tomasr/molokai
 
 ## Comment
  - [scrooloose/nerdcommenter][2]
@@ -47,26 +60,54 @@ This repository contains my Vim configurations.
    - `s` to vertically split the window and open the file in the split window
    - `<Enter>` to open the file in the current tab
 
-## Fuzzy File Finder
- - `kien/ctrlp.vim`
- - settings: `let g:ctrlp_map = '<c-p>'`
- - press `<c-p>`, i.e., ctrl + p to find the file (case-insensitive) in the current directory and subdirectories
-
 ## Fix Trailing and Leading Spaces
  - bronson/vim-trailing-whitespace
  - the trailing/leading spaces are shown in red
  - `:FixWhiteSpace` to delete trailing/leading spaces of the whole file or the selected region
 
-## Color Scheme
- - altercation/vim-colors-solarized
- - tomasr/molokai
+## Fuzzy File Finder
+ - `kien/ctrlp.vim`
+ - settings: `let g:ctrlp_map = '<c-p>'`
+ - press `<c-p>`, i.e., ctrl + p to find the file (case-insensitive) in the current directory and subdirectories
+
+## Indent Guides
+ - `nathanaelkane/vim-indent-guides`
+ - `<leader>ig` to toggle indent guides
+
+## Indent Line
+ - `Yggdroot/indentLine`
+ - Show indents with lines
+
+## Mark Visualization
+ - `kshenoy/vim-signature`
+ - `ma` to create a mark named `a`
+ - remember how to jump to mark `a`: backtick -- column, `'` -- beginning of the line
+ - `dma` to delete mark `a`
+ - `m-` to delete the mark in the current line
+ - `m<space> to delete all marks
+ - `m,` to allocate the next available mark for the current line
+
+## Python Auto Completion
+ - `davidhalter/jedi-vim`
+ - `ctrl + g` to show/hide completion suggestions.
+
+## Repeat
+ - tpope/vim-repeat
+ - Install this plugin so that `.` works for commands defined by other plugins
+
+## Resize or Move Split Windows
+ - `simeji/winresizer`
+ - First press `ctrl + E`
+    * it enters *resize* mode, press `j`, `h`,`k`, or `l` to resize windows.
+    * to change it to *move* mode, press `m` or `e`, then press `j`, `h, `k`, or `l`
+    * to change it to *focus* mode, press `f`, then press `j`, `h, `k`, or `l`
 
 ## Status Line
  - vim-airline/vim-airline
  - vim-airline/vim-airline-themes
 
 ## Tagbar
- - install ctags first, and add it to `PATH`
+ - install ctags first, e.g., `brew install ctags`
  - `<leader>ilt` to toggle the tagbar window
  - it is shown in the right side, since the left side is for the directory window
 
@@ -80,15 +121,7 @@ This repository contains my Vim configurations.
  - ;gg to go to declaration or definition
  - ctrl + o to go backward
  - ctrl + i to go forward
-
-## Mark Visualization
- - `kshenoy/vim-signature`
- - `ma` to create a mark named `a`
- - remember how to jump to mark `a`: backtick -- column, `'` -- beginning of the line
- - `dma` to delete mark `a`
- - `m-` to delete the mark in the current line
- - `m<space> to delete all marks
- - `m,` to allocate the next available mark for the current line
+ - If anaconda is used, compile YouCompleteMe with `/usr/bin/python install.py`
 
 [6]: https://github.com/
 [5]: https://github.com/

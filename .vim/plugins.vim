@@ -85,6 +85,9 @@ nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 "" disable docstring window
 autocmd FileType python setlocal completeopt-=preview
 
+" disble autocompletionon dot as it is very slow
+let g:jedi#popup_on_dot = 0
+
 "========================================
 " google/vim-codefmt
 "----------------------------------------
