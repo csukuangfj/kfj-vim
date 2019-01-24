@@ -1,3 +1,4 @@
+set encoding=utf-8
 source $HOME/.vim/mappings.vim
 source $HOME/.vim/tabs.vim
 source $HOME/.vim/spellcheck.vim
