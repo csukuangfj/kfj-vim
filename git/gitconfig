@@ -1,0 +1,8 @@
+[user]
+	name = Fangjun Kuang
+	email = fangjun.kuang@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/fangjun/.gitignore_global
+[gc]
+	autoDetach = false

@@ -1,0 +1,16 @@
+.DS_Store
+*.o
+*.d
+lib*.a
+*.html
+__pycache__
+*.pyc
+
+# latex
+*.log
+*.aux
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
