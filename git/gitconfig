@@ -6,3 +6,5 @@
 	excludesfile = /Users/fangjun/.gitignore_global
 [gc]
 	autoDetach = false
+[diff]
+  tool = vimdiff
