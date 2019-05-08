@@ -37,3 +37,7 @@ set foldmethod=marker
 set foldmarker={,}
 set foldlevel=1
 set nofoldenable "disable fold by default
+
+" for "find", "ls" and "b"
+set path+=**
+set wildmenu

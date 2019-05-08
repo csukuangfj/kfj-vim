@@ -15,4 +15,7 @@ inoremap jk <ESC>
 let mapleader=";"
 
 " for NERDTree
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
+
+" reload the current file
+noremap <Leader>r :e!<CR>
