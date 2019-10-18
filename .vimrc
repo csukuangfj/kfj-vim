@@ -6,6 +6,7 @@ source $HOME/.vim/kfj-bundle.vim
 source $HOME/.vim/plugins.vim
 source $HOME/.vim/fonts.vim
 source $HOME/.vim/tagbar.vim
+source $HOME/.vim/abbreviations.vim
 
 set background=dark
 if has("gui_running")
@@ -41,3 +42,8 @@ set nofoldenable "disable fold by default
 " for "find", "ls" and "b"
 set path+=**
 set wildmenu
+
+set showcmd
+let g:indentLine_setConceal = 0
+set conceallevel=0
+
