@@ -47,3 +47,4 @@ set showcmd
 let g:indentLine_setConceal = 0
 set conceallevel=0
 
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
