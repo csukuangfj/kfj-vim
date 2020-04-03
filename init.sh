@@ -1,8 +1,8 @@
 #!/bin/bash
 
 rm -rf ~/.vim
-rm -v ~/.vimrc
-rm -v ~/.ideavimrc
+rm -fv ~/.vimrc
+rm -fv ~/.ideavimrc
 
 ln -sfv $PWD/.vimrc ~/
 ln -sfv $PWD/.ideavimrc ~/
