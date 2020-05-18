@@ -33,6 +33,9 @@ set smartcase
 set title
 
 set cursorline
+hi CursorLine ctermbg=8 ctermfg=15 "8 = dark gray, 15 = white
+hi Cursor ctermbg=15 ctermfg=8
+
 
 set foldmethod=marker
 set foldmarker={,}
