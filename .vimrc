@@ -9,11 +9,6 @@ source $HOME/.vim/tagbar.vim
 source $HOME/.vim/abbreviations.vim
 
 set background=dark
-if has("gui_running")
-  colorscheme solarized
-else
-  colorscheme molokai
-endif
 
 set number
 syntax enable
@@ -32,9 +27,8 @@ set smartcase
 " Set terminal window title
 set title
 
+colorscheme molokai
 set cursorline
-hi CursorLine ctermbg=8 ctermfg=15 "8 = dark gray, 15 = white
-hi Cursor ctermbg=15 ctermfg=8
 
 
 set foldmethod=marker
