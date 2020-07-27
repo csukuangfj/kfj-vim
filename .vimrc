@@ -45,3 +45,4 @@ let g:indentLine_setConceal = 0
 set conceallevel=0
 
 autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+autocmd BufRead,BufNewFile *.cuh set filetype=cpp
