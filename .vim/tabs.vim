@@ -5,3 +5,4 @@ set smartindent
 set autoindent
 set expandtab
 
+" use :retab to convert all tabs to spaces
