@@ -19,6 +19,7 @@
     * [Status Line](#status-line)
     * [Tagbar](#tagbar)
     * [YouCompleteMe](#youcompleteme)
+    * [deoplete](#deoplete)
 - [TODO](#todo)
 - [Notes](#notes)
 
@@ -122,6 +123,10 @@ This repository contains my Vim configurations.
  - ctrl + o to go backward
  - ctrl + i to go forward
  - If anaconda is used, compile YouCompleteMe with `/usr/bin/python install.py`
+
+## deoplete
+  - `apt-get install python3-neovim`. NOTE: it requires `sudo` permission.
+  - It consumes less resource than YouCompleteMe.
 
 [6]: https://github.com/
 [5]: https://github.com/

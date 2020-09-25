@@ -5,7 +5,14 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'Valloric/YouCompleteMe'
+"ycm consumes too much resource
+"Plugin 'Valloric/YouCompleteMe'
+
+" the following three have to be installed together
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'Shougo/deoplete.nvim'
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bronson/vim-trailing-whitespace'

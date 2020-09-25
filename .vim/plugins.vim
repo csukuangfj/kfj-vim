@@ -103,3 +103,8 @@ augroup autoformat_settings
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 augroup END
 
+
+"========================================
+" Shougo/deoplete.nvim
+"----------------------------------------
+let g:deoplete#enable_at_startup = 1
