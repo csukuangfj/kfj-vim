@@ -125,6 +125,7 @@ This repository contains my Vim configurations.
  - If anaconda is used, compile YouCompleteMe with `/usr/bin/python install.py`
 
 ## deoplete
+  - `pip3 install pynvim`
   - `apt-get install python3-neovim`. NOTE: it requires `sudo` permission.
   - It consumes less resource than YouCompleteMe.
 
