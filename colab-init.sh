@@ -31,3 +31,4 @@ pip install -U msgpack-python
 
 echo "add_path /usr/local/cuda/bin" >> ~/.fangjun.sh
 echo "add_lib_path /usr/local/cuda/lib" >> ~/.fangjun.sh
+echo "source /usr/share/bash-completion/completions/git" >> ~/.fangjun.sh
