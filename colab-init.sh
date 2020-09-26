@@ -27,16 +27,7 @@ git config --global core.editor vim
 
 apt-get install python3-neovim
 pip3 install --user pynvim
+pip install -U msgpack-python
 
-mkdir -p $HOME/software/vim
-wget https://github.com/vim/vim/archive/v8.2.1743.tar.gz
-tar xf v8.2.1743.tar.gz
-cd vim-8.2.1743
-./configure --prefix=$HOME/software/vim
-make -j
-make install
-
-cd
 echo "add_path /usr/local/cuda/bin" >> ~/.fangjun.sh
 echo "add_lib_path /usr/local/cuda/lib" >> ~/.fangjun.sh
-echo "add_path $HOME/software/bin" >> ~/.fangjun.sh
