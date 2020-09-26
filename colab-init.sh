@@ -2,6 +2,7 @@
 
 cd
 
+
 apt-get install tmux
 wget --quiet https://github.com/Kitware/CMake/releases/download/v3.18.2/cmake-3.18.2-Linux-x86_64.sh
 chmod +x cmake-3.18.2-Linux-x86_64.sh && ./cmake-3.18.2-Linux-x86_64.sh --skip-license --prefix=/usr/local
@@ -24,5 +25,18 @@ git config --global user.email "csukuangfj@gmail.com"
 git config --global diff.tool vimdiff
 git config --global core.editor vim
 
+apt-get install python3-neovim
+pip3 install --user pynvim
 
+mkdir -p $HOME/software/vim
+wget https://github.com/vim/vim/archive/v8.2.1743.tar.gz
+tar xf v8.2.1743.tar.gz
+cd vim-8.2.1743
+./configure --prefix=$HOME/software/vim
+make -j
+make install
 
+cd
+echo "add_path /usr/local/cuda/bin" >> ~/.fangjun.sh
+echo "add_lib_path /usr/local/cuda/lib" >> ~/.fangjun.sh
+echo "add_path $HOME/software/bin" >> ~/.fangjun.sh
