@@ -20,3 +20,4 @@ noremap <C-n> :NERDTreeToggle<CR>
 " reload the current file
 noremap <Leader>r :e!<CR>
 noremap <Leader>w :w<CR>
+noremap <Leader>; :
