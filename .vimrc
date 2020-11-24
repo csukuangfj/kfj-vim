@@ -47,3 +47,11 @@ set conceallevel=0
 autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 autocmd BufRead,BufNewFile *.cuh set filetype=cpp
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
+
+" use tab to do autocompletion for neovim
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" press ctrl + L to remove highlighted search results
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+
+
