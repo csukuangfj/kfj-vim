@@ -54,4 +54,6 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " press ctrl + L to remove highlighted search results
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
+" Disable highlighting matched parentheses. It's really annoying.
+let g:loaded_matchparen=1
 
