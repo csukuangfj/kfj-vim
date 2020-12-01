@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# sudo apt-get install neovim
 # sudo apt-get install python3-pip3
 # sudo apt-get install python3-pip
 # pip3 install --upgrade msgpack
