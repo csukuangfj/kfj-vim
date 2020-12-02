@@ -41,4 +41,11 @@ cat >> ~/.fangjun.sh << 'EOF'
 # show files with color in iterm on macOS
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+alias gs="git status"
+alias gb="git branch"
+alias gd="git difftool"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
 EOF
