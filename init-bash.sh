@@ -36,3 +36,9 @@ EOF
 else
   echo "skip add_lib_path"
 fi
+
+cat >> ~/.fangjun.sh << 'EOF'
+# show files with color in iterm on macOS
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+EOF
