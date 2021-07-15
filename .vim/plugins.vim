@@ -99,7 +99,7 @@ augroup autoformat_settings
   autocmd FileType gn AutoFormatBuffer gn
   autocmd FileType html,css,json AutoFormatBuffer js-beautify
   autocmd FileType java AutoFormatBuffer google-java-format
-  autocmd FileType python AutoFormatBuffer yapf
+  autocmd FileType python AutoFormatBuffer black
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 augroup END
 
@@ -108,3 +108,10 @@ augroup END
 " Shougo/deoplete.nvim
 "----------------------------------------
 let g:deoplete#enable_at_startup = 1
+
+"========================================
+" Plugin 'fisadev/vim-isort'
+"----------------------------------------
+" let g:vim_isort_map = '<C-i>'  " default
+" (1) :Isort to sort the whole file
+" (2) Select a region, and press ctrl + i to sort it

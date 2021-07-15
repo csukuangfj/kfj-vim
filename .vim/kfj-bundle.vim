@@ -34,6 +34,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'vim-syntastic/syntastic'
 Plugin 'Yggdroot/indentLine'
+Plugin 'fisadev/vim-isort'
 
 Plugin 'csukuangfj/vim-tex-fold'
 
