@@ -57,3 +57,5 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 " Disable highlighting matched parentheses. It's really annoying.
 let g:loaded_matchparen=1
 
+let g:ctrlp_custom_ignore = 'data\|DS_Store\|.git'
+
