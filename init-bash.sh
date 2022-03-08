@@ -48,4 +48,7 @@ alias gd="git difftool"
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
+
+PS1='\u:\W\$ '
+
 EOF
