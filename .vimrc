@@ -59,3 +59,5 @@ let g:loaded_matchparen=1
 
 let g:ctrlp_custom_ignore = 'data\|DS_Store\|.git'
 
+" highlight the cursor at column 80
+set colorcolumn=80
