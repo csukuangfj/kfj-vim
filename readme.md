@@ -113,6 +113,7 @@ This repository contains my Vim configurations.
  - it is shown in the right side, since the left side is for the directory window
 
 ## YouCompleteMe
+ - **CAUTION**: Do NOT use it as it eats up too much resources. Use [./init-nvim.sh](./init-nvim.sh) instead
  - `cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON` or `set( CMAKE_EXPORT_COMPILE_COMMANDS ON )`,
  which generate a file `compile_commands.json` in the build directory.
  - symlink it to the project root directory.
