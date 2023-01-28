@@ -103,6 +103,7 @@ augroup autoformat_settings
   autocmd FileType python AutoFormatBuffer black
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
   autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType swift AutoFormatBuffer swift-format
 augroup END
 
 
