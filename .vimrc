@@ -48,6 +48,7 @@ autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 autocmd BufRead,BufNewFile *.cuh set filetype=cpp
 autocmd BufRead,BufNewFile *.cu set filetype=cpp
 autocmd BufRead,BufNewFile *.swift set filetype=swift
+autocmd BufRead,BufNewFile *.ll set filetype=asm
 
 " use tab to do autocompletion for neovim
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
