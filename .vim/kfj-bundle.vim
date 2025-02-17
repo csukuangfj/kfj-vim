@@ -35,6 +35,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'vim-syntastic/syntastic'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fisadev/vim-isort'
+Plugin 'keith/swift.vim'
+Plugin 'dart-lang/dart-vim-plugin'
+
 
 Plugin 'csukuangfj/vim-tex-fold'
 
