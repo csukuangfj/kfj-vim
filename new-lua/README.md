@@ -90,17 +90,26 @@ This setup supports all 12 programming languages used across the sherpa-onnx rep
 | Dart | `dartls` | Bundled with Flutter / Dart SDK. |
 | Object Pascal | `pasls` | Community Pascal Language Server (not tried yet). |
 
+Packages are installed inside
+```
+ls ~/.local/share/nvim/mason/
+
+bin             packages        registries      share           staging         system_packages
+```
+
 # Essential LSP & Navigation Keymaps
 
 Master these shortcuts to supercharge your code navigation:
 
-    - `gd:` Go to definition (jump straight to the implementation or declaration).
-    - `Ctrl + o`: Jump back to your previous cursor location after using gd.
-    - `K`: Hover to display documentation, type signatures, and docstrings.
-    - `;rn`: Rename symbol globally across all files in your project workspace.
-    - `;ca`: Trigger code actions (quick fixes, automatic imports).
-    - `[d` / `]d`: Jump to the previous or next diagnostic error/warning.
-    - `;r`: Reload current file (:e!).
-    - `;w`: Save current file (:w).
-    - `<C-n>`: Toggle file tree explorer (neo-tree).
-    - `jk`: Fast escape from insert mode back to normal mode.
+- `gd:` Go to definition (jump straight to the implementation or declaration).
+- `Ctrl + o`: Jump back to your previous cursor location after using gd.
+- `K`: Hover to display documentation, type signatures, and docstrings.
+- `;rn`: Rename symbol globally across all files in your project workspace.
+- `;ca`: Trigger code actions (quick fixes, automatic imports).
+- `[d` / `]d`: Jump to the previous or next diagnostic error/warning.
+- `;r`: Reload current file (:e!).
+- `;w`: Save current file (:w).
+- `<C-n>`: Toggle file tree explorer (neo-tree).
+- `jk`: Fast escape from insert mode back to normal mode.
+
+
