@@ -1,6 +1,6 @@
 return {
   {
-    "folke/which-key.nvim", -- dummy or standalone plugin spec wrapper for keymaps
+    "folke/which-key.nvim",
     lazy = false,
     priority = 1000,
     config = function()
@@ -23,6 +23,9 @@ return {
       map("n", "<Leader>w", ":w<CR>", { desc = "Save file" })
       map("n", "<Leader>;", ":", { desc = "Open command line" })
       map("n", "<C-n>", ":Neotree toggle<CR>", { desc = "Toggle file tree" })
+
+      -- 加上这一行：按 ;d 直接查看当前行的诊断提示
+      map("n", "<Leader>d", vim.diagnostic.open_float, { desc = "Show line diagnostics" })
     end,
   },
 }
