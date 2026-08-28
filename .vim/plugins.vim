@@ -91,7 +91,7 @@ let g:jedi#popup_on_dot = 0
 "========================================
 " google/vim-codefmt
 "----------------------------------------
-Glaive codefmt google_java_executable="java -jar /Users/fangjun/software/google-java-format-1.16.0-all-deps.jar"
+Glaive codefmt google_java_executable="java -jar /Users/fangjun/software/google-java-format-1.32.0-all-deps.jar"
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
   autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
