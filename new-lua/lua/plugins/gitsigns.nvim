@@ -1,0 +1,49 @@
+return {
+  {
+    "lewis6991/gitsigns.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("gitsigns").setup({
+        signs = {
+          add          = { text = "┃" },
+          change       = { text = "┃" },
+          delete       = { text = "_" },
+          topdelete    = { text = "‾" },
+          changedelete = { text = "~" },
+          untracked    = { text = "┆" },
+        },
+        on_attach = function(bufnr)
+          local gs = package.loaded.gitsigns
+
+          local function map(mode, l, r, opts)
+            opts = opts or {}
+            opts.buffer = bufnr
+            vim.keymap.set(mode, l, r, opts)
+          end
+
+          -- ==========================================
+          -- 📖 Usage Guide (Navigation & Actions):
+          -- ==========================================
+          -- 1. Jump between changed hunks:
+          map("n", "]h", function()
+            if vim.wo.diff then return "]h" end
+            vim.schedule(function() gs.next_hunk() end)
+            return "<Ignore>"
+          end, { expr = true, desc = "Next git hunk" })
+
+          map("n", "[h", function()
+            if vim.wo.diff then return "[h" end
+            vim.schedule(function() gs.prev_hunk() end)
+            return "<Ignore>"
+          end, { expr = true, desc = "Previous git hunk" })
+
+          -- 2. Preview git changes (Diff popup)
+          map("n", "<leader>gp", gs.preview_hunk, { desc = "Preview git hunk" })
+
+          -- 3. Reset/Undo changes for current line/hunk
+          map("n", "<leader>gr", gs.reset_hunk, { desc = "Reset git hunk" })
+        end,
+      })
+    end,
+  },
+}
