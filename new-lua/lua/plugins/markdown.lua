@@ -9,6 +9,7 @@ return {
     -- 删掉 config 里的 setup！只绑定快捷键
     keys = {
       { "<leader>md", "<Plug>(md-render-preview)", desc = "MdRender 悬浮预览" },
+      { "<leader>mt", "<Plug>(md-render-preview-tab)", desc = "新Tab全屏预览md（推荐，窗口最大）" },
     },
     cmd = { "MdRender", "MdRenderDemo" },
   },
